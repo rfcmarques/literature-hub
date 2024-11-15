@@ -6,7 +6,7 @@ use Illuminate\Auth\AuthenticationException;
 
 return [
     'title' => 'API Platform',
-    'description' => 'My awesome API',
+    'description' => 'An API for a book review application',
     'version' => '1.0.0',
 
     'routes' => [
@@ -71,13 +71,13 @@ return [
 
     'swagger_ui' => [
         'enabled' => true,
-        //'apiKeys' => [
-        //    'api' => [
-        //        'type' => 'Bearer',
-        //        'name' => 'Authentication Token',
-        //        'in' => 'header'
-        //    ]
-        //],
+        'apiKeys' => [
+           'api' => [
+               'type' => 'Bearer',
+               'name' => 'Authentication Token',
+               'in' => 'header'
+           ]
+        ],
         //'oauth' => [
         //    'enabled' => true,
         //    'type' => 'oauth2',
